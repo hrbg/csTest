@@ -1,3 +1,14 @@
+<!-- Include these scripts to import address books with CloudSponge -->
+<script type="text/javascript" src="https://api.cloudsponge.com/address_books.js"></script>
+<script type="text/javascript" charset="utf-8">
+var csPageOptions = {
+  domain_key:"RGJMTQ5UNRNJME6EQBDF", 
+  textarea_id:"contact_email_list"
+};
+</script>
+
+<!-- Any link with a class="cs_import" will start the import process -->
+<a class="cs_import">Add from Address Book</a>
 <%= form_for @contact do |f| %>
 <%= f.label :email_list %>
 <%= f.text_area :email_list %>
