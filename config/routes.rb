@@ -1,4 +1,4 @@
 Cloudsponge::Application.routes.draw do
-  resources :contacts, only: [:new, :index, :create]
+  resources :contacts
   root :to => 'contacts#index'
 end

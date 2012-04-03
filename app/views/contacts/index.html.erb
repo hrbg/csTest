@@ -1,6 +1,11 @@
 <%= link_to 'New Contact', new_contact_path %>
 <ul>
   <% @contacts.each do |contact| %>
-    <li><%= contact.email_list %></li>
+    <li>
+      <p>
+        <%= contact.email_list %>
+      </p>
+      <span><%= link_to :delete, contact, confirm: "Are u sure?", method: :delete  %>
+    </li>
   <% end %>
 </ul>
