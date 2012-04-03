@@ -1,6 +1,6 @@
 <%= link_to 'New Contact', new_contact_path %>
 <ul>
-  <%= @contacts.each do |contact| %>
+  <% @contacts.each do |contact| %>
     <li><%= contact.email_list %></li>
   <% end %>
 </ul>
